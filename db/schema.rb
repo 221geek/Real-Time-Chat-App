@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2021_12_26_152758) do
     t.string "last_name"
     t.string "username"
     t.string "email"
-    t.string "password"
+    t.string "password_digest"
     t.boolean "is_online", default: false
     t.datetime "last_seen"
     t.datetime "created_at", precision: 6, null: false
