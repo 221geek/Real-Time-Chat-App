@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  scope(:path => '/api') do
-    resource :users, only: [:create]
+  namespace :api do
+    resource :users, only: [:create, :show]
     post '/login', to: 'auth#login'
   end
 end
